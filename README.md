@@ -2,7 +2,16 @@
 
 Este aplicativo escrito en python ha sido construido para realizar pruebas de carga secuenciales (con clusters) y concurrentes hacia servicios o sitios de internet.
 
-## Ejecutar
+## Instalación
+Los siguientes pasos fueron usados en la distribución de linux `Ubuntu 20.04 focal`. Instalar lo siguiente:
+1. **[python 3.8.5](https://www.python.org/downloads/release/python-385/)**
+2. **tkinter**: `sudo apt-get install python3-tk`
+3. **matplotlib**: `pip3 install matplotlib`
+4. **sklearn**: `pip3 install sklearn`
+5. **numpy**: `pip3 install numpy`
+6. **pandas**: `pip3 install pandas`
+
+## Ejecución
 Para ejecutar la aplicación, es necesario ubicarse en la raíz del proyecto `load-tests` y ejecutar el comando:
 
 _Para python 3.8.5_
