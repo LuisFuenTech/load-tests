@@ -84,13 +84,13 @@ def process_request_type(request_name):
             message="¡No se puedo procesar la url!", title="Alerta"))
 
 
-def centroids():
-    centr = cluster_object.centroids
-    cade = ""
-    for i, val in enumerate(centr):
-        cade += "Centroide {number} [{coordinates}] \n".format(
+def show_centroids():
+    message = ""
+    
+    for i, val in enumerate(cluster_object.centroids):
+        message += "Centroide {number} [{coordinates}] \n".format(
             number=i+1, coordinates=listToString(numpy.round(val, 2)))
-    tk.messagebox.showinfo(message=cade, title="Centroides")
+    tk.messagebox.showinfo(message=message, title="Centroides")
 
 
 def listToString(list):
@@ -158,7 +158,7 @@ url_input.place(x=50, y=60)
 url_input.insert(tk.END, "")
 
 process_button = tk.Button(
-    cluster_frame, command=centroids, text="Mostrar centroides")
+    cluster_frame, command=show_centroids, text="Mostrar centroides")
 process_button.place(x=73, y=5)
 
 process_button = tk.Button(data_tab, command=process, text="Procesar")
