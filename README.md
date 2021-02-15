@@ -25,6 +25,9 @@ python main.py
 python2 main.py
 ```
 
+# Manual de usuario
+Actual [manual de usuario](https://github.com/LuisFuenTech/load-tests/blob/master/docs/MANUAL%20DE%20USUARIO%20-%20PRUEBAS%20DE%20CARGA.pdf)
+
 ## Librerías
 - python 3.8.5
 - tkinter 3.8.5
